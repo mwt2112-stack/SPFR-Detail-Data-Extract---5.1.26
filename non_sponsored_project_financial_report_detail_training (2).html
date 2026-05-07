@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Columbia University – Sponsored Project Financial Report – Detail – Data Extract</title>
+<style>
+html { zoom: 1.25; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #111;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+#report-panel {
+  flex: 1 1 auto;
+  background: #fff;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.top-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 3px 10px 2px;
+}
+.logo-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+.logo-crown {
+  font-size: 20px;
+  color: #003087;
+  line-height: 1;
+  margin-top: 2px;
+}
+.logo-text .cu-name {
+  font-size: 9.5px;
+  font-weight: bold;
+  color: #003087;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+.logo-text .cu-sub {
+  font-size: 6.5px;
+  color: #003087;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.center-titles {
+  flex: 1;
+  text-align: center;
+  line-height: 1.3;
+}
+.center-titles .fds { font-size: 9px; color: #444; font-style: italic; }
+.center-titles .t1  { font-size: 12px; font-weight: bold; }
+.center-titles .t2  { font-size: 11px; font-weight: bold; }
+.center-titles .t3  { font-size: 10px; font-weight: bold; }
+.run-info {
+  text-align: right;
+  font-size: 9.5px;
+  color: #111;
+  white-space: nowrap;
+  min-width: 140px;
+}
+.meta-block {
+  padding: 3px 12px 3px;
+  font-size: 9px;
+  line-height: 1.4;
+  display: flex;
+  gap: 40px;
+}
+.meta-col { display: flex; flex-direction: column; gap: 0px; }
+.meta-block b { font-weight: bold; }
+.table-wrap { padding: 0 4px 4px; overflow-x: auto; }
+table.rt {
+  border-collapse: collapse;
+  font-size: 7px;
+  table-layout: auto;
+  width: 100%;
+  white-space: nowrap;
+}
+.rt thead tr.hdr-row th {
+  font-size: 7px;
+  font-weight: bold;
+  text-align: left;
+  padding: 1px 3px;
+  border-bottom: 1px solid #333;
+  vertical-align: bottom;
+  line-height: 1.2;
+  background: #fff;
+  white-space: nowrap;
+  cursor: default;
+}
+.rt thead tr.hdr-row th.r { text-align: right; }
+.rt tbody td {
+  padding: 0px 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  font-size: 7px;
+  height: 11px;
+  line-height: 11px;
+  border: none;
+}
+.rt tbody td.r { text-align: right; }
+.rt tbody tr:nth-child(even) td { background: #fafafa; }
+.conf-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 12px;
+  font-size: 9px;
+  color: #444;
+  border-top: 1px solid #ddd;
+  margin-top: 8px;
+}
+</style>
+</head>
+<body>
+<div id="report-panel">
+  <div class="top-header">
+    <div class="logo-area">
+      <div class="logo-crown">&#9819;</div>
+      <div class="logo-text">
+        <div class="cu-name">Columbia University</div>
+        <div class="cu-sub">In the City of New York</div>
+      </div>
+    </div>
+    <div class="center-titles">
+      <div class="fds">Financial Data Store</div>
+      <div class="t1">Columbia University</div>
+      <div class="t2">Sponsored Project Financial Report - Detail - Data Extract</div>
+      <div class="t3">As of 01/30/2026</div>
+    </div>
+    <div class="run-info">
+      <div>Run Date: 5/7/2026</div>
+      <div>Run Time: 5:13:12PM</div>
+    </div>
+  </div>
+
+  <div class="meta-block">
+    <div class="meta-col">
+      <div><b>Report ID:</b> PC_RPT1084</div>
+      <div><b>Run ID:</b> mwt2112</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="rt">
+      <thead>
+        <tr class="hdr-row">
+          <th>Activity Type</th>
+          <th>Account</th>
+          <th>Department</th>
+          <th>Department Description</th>
+          <th>Project ID</th>
+          <th>Activity ID</th>
+          <th>Initiative</th>
+          <th>Segment</th>
+          <th>Site</th>
+          <th>Transaction Date</th>
+          <th>Transaction ID</th>
+          <th>PO#</th>
+          <th>Invoice ID or Cash Batch ID / Date</th>
+          <th>Source</th>
+          <th>Description</th>
+          <th class="r">Amount</th>
+          <th>Project Manager</th>
+          <th>Project Owning Dept</th>
+          <th>Project Description</th>
+          <th>Project Title</th>
+          <th>Sponsor</th>
+          <th>Project Period</th>
+          <th>Activity Period</th>
+          <th>Award Period</th>
+          <th>Project Parameter</th>
+          <th>Activity Parameter</th>
+          <th>Activity Type Parameter</th>
+          <th>Project Status Parameter</th>
+          <th>Project Manager Parameter</th>
+          <th>Budget Account Parameter</th>
+          <th>Department Parameter</th>
+          <th>Detail Account Parameter</th>
+          <th>Report Scope Parameter</th>
+          <th>Run Date</th>
+          <th>Run Time</th>
+          <th>Run ID</th>
+          <th>As of</th>
+        </tr>
+      </thead>
+      <tbody id="txn-body"></tbody>
+    </table>
+  </div>
+
+  <div class="conf-line">
+    <span>Columbia University Proprietary and Confidential</span>
+    <span>Page No. 1</span>
+  </div>
+</div>
+
+<script>
+var PROJ = 'GG012345';
+var PDESC = 'NFL Training';
+var DEPT = '5201234';
+var DEPT_DESC = 'ENG Training';
+var OWNING_DEPT = '5201234 - ENG Training';
+var TITLE = 'Cosmic Cognition: Astrophysical Perception and Psychoanalytic Patterning';
+var PPERIOD = '06/01/2023 - 05/31/2026';
+var APERIOD = '06/01/2023 - 05/31/2026';
+var AWARD = '06/01/2023 - 05/31/2028';
+var SPONSOR = '0000000088 - National Football League';
+var RUN_DATE = '5/7/2026';
+var RUN_TIME = '5:13:12PM';
+var RUN_ID = 'mwt2112';
+var AS_OF = '01/30/2026';
+var PM = 'Josh Allen';
+
+function row(activityType, account, activityId, initiative, segment, site, txDate, txId, po, invoice, source, desc, amount, manager, projectStatus, reportScope) {
+  return {
+    activityType: activityType,
+    account: account,
+    department: DEPT,
+    departmentDescription: DEPT_DESC,
+    projectId: PROJ,
+    activityId: activityId,
+    initiative: initiative,
+    segment: segment,
+    site: site,
+    transactionDate: txDate,
+    transactionId: txId,
+    po: po,
+    invoice: invoice,
+    source: source,
+    description: desc,
+    amount: amount,
+    projectManager: PM,
+    projectOwningDept: OWNING_DEPT,
+    projectDescription: PDESC,
+    projectTitle: TITLE,
+    sponsor: SPONSOR,
+    projectPeriod: PPERIOD,
+    activityPeriod: APERIOD,
+    awardPeriod: AWARD,
+    projectParameter: PROJ,
+    activityParameter: '',
+    activityTypeParameter: '',
+    projectStatusParameter: projectStatus || 'Active Only',
+    projectManagerParameter: '',
+    budgetAccountParameter: '',
+    departmentParameter: '',
+    detailAccountParameter: 'TOT2',
+    reportScopeParameter: reportScope || 'Actual To Date - Month',
+    runDate: RUN_DATE,
+    runTime: RUN_TIME,
+    runId: RUN_ID,
+    asOf: AS_OF,
+    activityManager: manager
+  };
+}
+
+var TRANSACTIONS = [
+  row('BPALL','52050','20','60617','KMD1234','','03/31/2026','PAY2222459','','','PAY','', '4,156.88','Patrick Mahomes'),
+  row('BPALL','52050','20','60617','KMD1234','','03/15/2026','PAY2219269','','','PAY','', '4,156.88','Patrick Mahomes'),
+  row('BPALL','52050','01','60908','ABC123','','03/15/2026','PAY2219269','','','PAY','', '3,750.00','Justin Jefferson'),
+  row('BPALL','52050','01','60908','ABC123','','03/31/2026','PAY2222459','','','PAY','', '3,750.00','Justin Jefferson'),
+  row('BPALL','52220','01','60908','ABC123','','03/31/2026','PAY2222459','','','PAY','', '3,647.92','Lamar Jackson'),
+  row('BPALL','52220','22','60617','AK3625','','03/31/2026','PAY2222459','','','PAY','', '3,182.71','Joe Burrow'),
+  row('BPALL','52810','21','60619','SF2237','','03/31/2026','PAY2224457','','','PAY','', '2,063.43','Micah Parsons'),
+  row('BPALL','52810','15','00000','LAJ8','','03/31/2026','PAY2224457','','','PAY','', '6,590.27','CeeDee Lamb'),
+  row('BPALL','53300','01','60908','ABC123','','03/31/2026','PAY2222459','','','PAY','', '8,193.98','Jalen Hurts'),
+  row('BPALL','54410','15','60908','LAJ8','','03/22/2026','PAY2222065','','','PAY','', '920.00','Travis Kelce'),
+  row('BPALL','59010','01','60908','ABC123','','03/31/2026','PAY2222459','','','PAY','', '4,677.57','A.J. Brown'),
+  row('BPALL','61160','15','00000','LAJ8','','03/31/2026','PAY2225076','','','PAY','', '6,078.60','Tyreek Hill'),
+  row('BPALL','61405','11','00000','ABC123','','03/25/2026','07106861','','8225397_00000000000000116','AP','19-MAR-2026 AMAZON MKTPL*B524P7S', '144.74','Patrick Surtain II'),
+  row('BPALL','61925','01','60908','ABC123','','03/16/2026','V0239869','CU00127465','10849182226','AP','DELL MARKETING LP', '2,100.00','Sauce Gardner'),
+  row('BPALL','62020','01','60908','ABC123','','03/10/2026','07095630','','428861-R','AP','DMX', '132.87','Davante Adams'),
+  row('BPALL','63010','01','60908','ABC123','','03/23/2026','V0308849','CU00139345','A3025R','AP','AVI FOODSYSTEMS INC', '792.38','Christian McCaffrey'),
+  row('BPALL','63211','01','60908','ABC123','','03/06/2026','0002225933','','','ITF','Adobe CC License-REQ0288419', '199.00','George Kittle'),
+  row('BPALL','64055','01','00000','00000000','3005','03/31/2026','MP22223518','','','MP2','CUF SR:S1706497, WO:W4852336', '405.00','Nick Bosa'),
+  row('BPALL','64330','01','60908','ABC123','','03/11/2026','07097444','','8187994_00000000000000023','AP','01-MAR-2026 SLACK T04BQLYBCCU', '28.35','Stefon Diggs'),
+  row('BPALL','64365','01','60908','ABC123','','03/10/2026','07095630','','428861-R','AP','DMX', '900.00','Ja’Marr Chase'),
+  row('BPALL','64505','01','60908','ABC123','','03/11/2026','V0308710','CU00132296','ARNI-03102026','AP','Neuromatch, Inc.', '130,000.00','T.J. Watt'),
+  row('BPALL','65010','01','60908','ABC123','','03/10/2026','V0307717','G20519','1726-2401405-1','AP','Board of Trustees of the Leland', '25,000.00','Brock Purdy'),
+  row('BPALL','65020','01','60908','ABC123','','03/02/2026','V0300394','G18997','3285498','AP','CARNEGIE MELLON UNIVERSITY', '192,636.63','Aaron Donald'),
+  row('BPALL','65020','01','60908','ABC123','','03/26/2026','V0319453','G19363','GM00131809','AP','Trustees of Princeton University', '20,341.97','Derrick Henry'),
+  row('BPALL','65210','01','60908','ABC123','','03/10/2026','07095630','','428861-R','AP','DMX', '481.59','Cooper Kupp'),
+  row('BPALL','65220','01','60908','ABC123','','03/06/2026','07093960','','430808-C','AP','Smokey Robinson', '210.71','Amon-Ra St. Brown'),
+  row('BPALL','65230','01','60908','ABC123','','03/10/2026','07095630','','428861-R','AP','DMX', '267.95','Deebo Samuel'),
+  row('BPALL','66155','01','60908','ABC123','','03/10/2026','07095630','','428861-R','AP','DMX', '77.53','Maxx Crosby'),
+  row('BPALL','69810','20','60617','KMD1234','','03/26/2026','ALL0000012','','','ALL','', '3,485.54','Chris Jones'),
+  row('BPALL','69810','15','00000','LAJ8','','03/31/2026','ALL0000077','','','ALL','', '4,250.72','Myles Garrett'),
+  row('BPALL','52050','06','60908','ABC123','','03/15/2026','PAY2219270','','','PAY','', '2,875.00','Saquon Barkley'),
+  row('BPALL','52220','07','60617','KMD1234','','03/31/2026','PAY2222460','','','PAY','', '3,225.45','Aidan Hutchinson'),
+  row('BPALL','52810','18','00000','LAJ8','','03/31/2026','PAY2224458','','','PAY','', '4,526.84','Fred Warner'),
+  row('BPALL','59010','22','60617','AK3625','','03/15/2026','PAY2219271','','','PAY','', '954.81','C.J. Stroud'),
+  row('BPALL','61160','21','60619','SF2237','','03/31/2026','PAY2225077','','','PAY','', '2,431.44','Justin Herbert'),
+  row('BPALL','61405','11','00000','ABC123','','03/25/2026','07106862','','8225397_00000000000000117','AP','19-MAR-2026 AMAZON MKTPL*B54QD62', '79.63','Garrett Wilson'),
+  row('BPALL','62020','01','60908','ABC123','','03/10/2026','07095631','','428862-R','AP','DMX', '481.59','Davante Adams'),
+  row('BPALL','65220','01','60908','ABC123','','03/10/2026','07095632','','428863-R','AP','Smokey Robinson', '46.25','Amon-Ra St. Brown'),
+  row('BPALL','66155','01','60908','ABC123','','03/10/2026','07095633','','428864-R','AP','DMX', '65.26','Maxx Crosby'),
+  row('BPALL','69810','16','60908','LAJ8','','03/31/2026','ALL0000078','','','ALL','', '1,459.90','Myles Garrett'),
+  row('BPALL','52050','12','ABC123','ABC123','','04/02/2026','PAY2226001','','','PAY','', '5,284.11','Trevor Lawrence'),
+  row('BPALL','52220','14','KMD1234','KMD1234','','04/03/2026','PAY2226002','','','PAY','', '2,744.66','Puka Nacua'),
+  row('BPALL','52810','19','LAJ8','LAJ8','','04/04/2026','PAY2226003','','','PAY','', '7,102.93','Bijan Robinson'),
+  row('BPALL','59010','08','ABC123','ABC123','','04/05/2026','PAY2226004','','','PAY','', '1,318.44','Breece Hall'),
+  row('BPALL','61160','24','SF2237','SF2237','','04/06/2026','PAY2226005','','','PAY','', '3,902.10','Jahmyr Gibbs'),
+  row('BPALL','61405','13','ABC123','ABC123','','04/07/2026','07106863','','8225397_00000000000000118','AP','20-MAR-2026 AMAZON MKTPL*Q92KL1', '58.77','Jayden Daniels'),
+  row('BPALL','62020','17','ABC123','ABC123','','04/08/2026','07095634','','428865-R','AP','DMX', '613.29','DK Metcalf'),
+  row('BPALL','63211','09','LAJ8','LAJ8','','04/09/2026','0002225934','','','ITF','Adobe Enterprise Renewal', '449.00','Tee Higgins'),
+  row('BPALL','64505','05','ABC123','ABC123','','04/10/2026','V0308711','CU00132297','ARNI-04102026','AP','Neuromatch, Inc.', '84,500.00','Roquan Smith'),
+  row('BPALL','69810','18','KMD1234','KMD1234','','04/11/2026','ALL0000079','','','ALL','', '2,885.73','Quinnen Williams')
+];
+
+function renderTable() {
+  var html = '';
+  for (var i = 0; i < TRANSACTIONS.length; i++) {
+    var tx = TRANSACTIONS[i];
+    html += '<tr>' +
+      '<td>'+tx.activityType+'</td>' +
+      '<td>'+tx.account+'</td>' +
+      '<td>'+tx.department+'</td>' +
+      '<td>'+tx.departmentDescription+'</td>' +
+      '<td>'+tx.projectId+'</td>' +
+      '<td>'+tx.activityId+'</td>' +
+      '<td>'+tx.initiative+'</td>' +
+      '<td>'+tx.segment+'</td>' +
+      '<td>'+tx.site+'</td>' +
+      '<td>'+tx.transactionDate+'</td>' +
+      '<td>'+tx.transactionId+'</td>' +
+      '<td>'+tx.po+'</td>' +
+      '<td>'+tx.invoice+'</td>' +
+      '<td>'+tx.source+'</td>' +
+      '<td>'+tx.description+'</td>' +
+      '<td class="r">'+tx.amount+'</td>' +
+      '<td>'+tx.projectManager+'</td>' +
+      '<td>'+tx.projectOwningDept+'</td>' +
+      '<td>'+tx.projectDescription+'</td>' +
+      '<td>'+tx.projectTitle+'</td>' +
+      '<td>'+tx.sponsor+'</td>' +
+      '<td>'+tx.projectPeriod+'</td>' +
+      '<td>'+tx.activityPeriod+'</td>' +
+      '<td>'+tx.awardPeriod+'</td>' +
+      '<td>'+tx.projectParameter+'</td>' +
+      '<td>'+tx.activityParameter+'</td>' +
+      '<td>'+tx.activityTypeParameter+'</td>' +
+      '<td>'+tx.projectStatusParameter+'</td>' +
+      '<td>'+tx.projectManagerParameter+'</td>' +
+      '<td>'+tx.budgetAccountParameter+'</td>' +
+      '<td>'+tx.departmentParameter+'</td>' +
+      '<td>'+tx.detailAccountParameter+'</td>' +
+      '<td>'+tx.reportScopeParameter+'</td>' +
+      '<td>'+tx.runDate+'</td>' +
+      '<td>'+tx.runTime+'</td>' +
+      '<td>'+tx.runId+'</td>' +
+      '<td>'+tx.asOf+'</td>' +
+      '</tr>';
+  }
+  document.getElementById('txn-body').innerHTML = html;
+}
+
+renderTable();
+
+Array.from(document.querySelectorAll('th')).forEach(th=>{
+  th.onclick = null;
+  th.style.pointerEvents = 'none';
+});
+</script>
+</body>
+</html>
